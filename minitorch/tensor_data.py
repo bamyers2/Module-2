@@ -1,4 +1,3 @@
-
 import random
 from .operators import prod
 from numpy import array, float64, ndarray
