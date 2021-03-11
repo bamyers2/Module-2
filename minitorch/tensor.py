@@ -11,9 +11,7 @@ class Tensor(Variable):
     """
     Tensor is a generalization of Scalar in that it is a Variable that
     handles multidimensional arrays.
-
     Attributes:
-
         _tensor (:class:`TensorData`) : the tensor data storage
         backend : backend object used to implement tensor math (see `tensor_functions.py`)
     """
@@ -33,6 +31,7 @@ class Tensor(Variable):
         return self.contiguous()._tensor._storage.reshape(self.shape)
 
     # Properties
+
     @property
     def shape(self):
         """
